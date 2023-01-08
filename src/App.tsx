@@ -1,17 +1,17 @@
 import React from "react";
 import "./App.css";
 
-import SectionLayout from "./sections/SectionLayout";
+import SectionLayout from "./components/SectionLayout";
 
 import Navbar, { SectionProp } from "./components/Navbar";
-import About from "./sections/About";
-import Projects from "./sections/Projects";
-import Landing from "./sections/Landing";
-import Skills from "./sections/Skills";
-import Contact from "./sections/Contact";
+import About from "./components/About";
+import Projects from "./components/Projects";
+import Landing from "./components/Landing";
+import Skills from "./components/Skills";
+import Contact from "./components/Contact";
 
 const sections: SectionProp[] = [
-  { name: "About me", id: "about-me", element: <About /> },
+  { name: "About", id: "about", element: <About /> },
   { name: "Projects", id: "projects", element: <Projects /> },
   { name: "Skills", id: "skills", element: <Skills /> },
   { name: "Contact", id: "contact", element: <Contact /> },

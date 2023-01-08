@@ -7,7 +7,7 @@ type Props = {
 
 const SectionLayout = ({ children, id }: Props) => {
   return (
-    <div id={id} className="w-screen h-screen scroll-mt-6">
+    <div id={id} className="w-screen h-screen scroll-mt-16">
       {children}
     </div>
   );
