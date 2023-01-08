@@ -24,7 +24,7 @@ const Image = () => {
   return (
     <div className="w-2/5 pl-12 flex items-center">
       <img
-        className="w-full shadow-lg shadow-black rounded-xl"
+        className="w-full shadow-lg shadow-black rounded-xl xl:w-4/5"
         src={profileImg}
         alt="profile"
       />
