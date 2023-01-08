@@ -1,28 +1,26 @@
 import React from "react";
 
-type LinkProp = {
-  name: string;
-  id: string;
+type SectionProps = {
+  sections: SectionProp[];
 };
 
-const links = [
-  { name: "About me", id: "about" },
-  { name: "Projects", id: "projects" },
-  { name: "Skills", id: "skills" },
-  { name: "Contact", id: "contact" },
-];
+export type SectionProp = {
+  name: string;
+  id: string;
+  element: any;
+};
 
-const Navbar = () => {
+const Navbar = ({ sections }: SectionProps) => {
   return (
     <div className="flex flex-nowrap text-2xl justify-evenly">
-      {links.map((linkProps: LinkProp) => {
-        return <NavbarBtn key={linkProps.id} {...linkProps} />;
+      {sections.map((sectionProp: SectionProp) => {
+        return <NavbarBtn key={sectionProp.id} {...sectionProp} />;
       })}
     </div>
   );
 };
 
-const NavbarBtn = ({ name, id }: LinkProp) => {
+const NavbarBtn = ({ name, id }: SectionProp) => {
   return <a href={`#${id}`}>{name}</a>;
 };
 

@@ -1,14 +1,13 @@
 import React from "react";
 
-type SectionProps = {
+type Props = {
   children: any;
-  title: string;
+  id: string | undefined;
 };
 
-const SectionLayout = ({ children, title }: SectionProps) => {
+const SectionLayout = ({ children, id }: Props) => {
   return (
-    <div className="w-screen">
-      <h1 className="text-2xl">{title}</h1>
+    <div id={id} className="w-screen h-screen scroll-mt-6">
       {children}
     </div>
   );
