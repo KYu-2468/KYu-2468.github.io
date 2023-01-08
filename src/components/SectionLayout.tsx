@@ -1,9 +1,9 @@
 import React from "react";
 
-type Props = {
+interface Props {
   children: any;
-  id: string | undefined;
-};
+  id: string;
+}
 
 const SectionLayout = ({ children, id }: Props) => {
   return (
