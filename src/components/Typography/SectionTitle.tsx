@@ -5,7 +5,7 @@ interface SectionProp {
 }
 
 const SectionTitle = ({ children }: SectionProp) => {
-  return <h1 className="ml-4 pt-4 text-4xl">{children}</h1>;
+  return <h1 className="ml-12 py-8 text-5xl">{children}</h1>;
 };
 
 export default SectionTitle;
