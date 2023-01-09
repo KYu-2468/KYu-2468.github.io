@@ -1,10 +1,26 @@
-# Getting Started with Create React App
+# Kevin Yu's Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <a href="https://kyu-2468.github.io/">
+    <img alt="Demo" width="600" src="./src/assets/img/portfolio.gif">
+  </a>
+</p>
+
+🚀 [See it live](https://kyu-2468.github.io/)
+
+## 📦 Built from scratch With
+
+- React (TypeScript) - Frontend Architecture
+- Tailwind CSS - Frontend Styling
+- GitHub Pages - Hosting/Deployment
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm run deploy`
+
+Deploys the app to the github pages
 
 ### `npm start`
 
