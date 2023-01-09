@@ -11,6 +11,7 @@ const Landing = () => {
         loop
         muted
         playsInline
+        poster="background-poster.png"
       />
       <div className="w-full h-full absolute top-0 left-0 flex flex-col items-center justify-center font-semibold text-white text-7xl">
         <div className="my-4">Hi there! I'm Kevin - </div>

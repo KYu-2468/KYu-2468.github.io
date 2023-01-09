@@ -20,7 +20,7 @@ const Project = ({
     <div className="w-5/6 h-[28rem] 2xl:h-[40rem] my-8 mx-auto p-4 flex flex-col items-center bg-black text-white rounded-xl shadow-xl shadow-black">
       <Title>{name}</Title>
       <div className="w-4/6">
-        <img src={image} alt={name} />
+        <img src={image} alt={name} loading="lazy" />
       </div>
       <div className="w-1/2 flex flex-nowrap justify-around mt-4 text-2xl">
         <a href={github}>

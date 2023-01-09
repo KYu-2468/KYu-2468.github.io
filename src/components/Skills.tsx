@@ -34,7 +34,12 @@ const SkillGroup = ({ skills, group }: SkillGroupProp) => {
             key={skill.name}
             className="flex flex-nowrap items-center justify-start"
           >
-            <img className={iconStyle} src={skill.icon} alt={skill.name} />
+            <img
+              className={iconStyle}
+              src={skill.icon}
+              alt={skill.name}
+              loading="lazy"
+            />
             <span className="w-full text-3xl m-4 flex justify-around">
               <span className="w-1/2">{skill.name}</span>
               <span className="w-1/2 ">{skill.experience}</span>
