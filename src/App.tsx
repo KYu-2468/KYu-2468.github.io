@@ -1,14 +1,16 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import "./App.css";
 
 import SectionLayout from "./components/SectionLayout";
 
 import Navbar, { SectionProp } from "./components/Navbar";
-import About from "./components/About";
-import Projects from "./components/Projects";
 import Landing from "./components/Landing";
-import Skills from "./components/Skills";
-import Contact from "./components/Contact";
+import Loading from "./components/Loading";
+
+const About = lazy(() => import("./components/About"));
+const Projects = lazy(() => import("./components/Projects"));
+const Skills = lazy(() => import("./components/Skills"));
+const Contact = lazy(() => import("./components/Contact"));
 
 const sections: SectionProp[] = [
   { name: "About", id: "about", element: <About /> },
@@ -28,9 +30,9 @@ function App() {
 
         {sections.map(({ id, element }: SectionProp) => {
           return (
-            <SectionLayout key={id} id={id}>
-              {element}
-            </SectionLayout>
+            <Suspense key={id} fallback={<Loading />}>
+              <SectionLayout id={id}>{element}</SectionLayout>
+            </Suspense>
           );
         })}
       </div>
