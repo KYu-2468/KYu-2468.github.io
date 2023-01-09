@@ -20,9 +20,8 @@ const sections: SectionProp[] = [
 function App() {
   return (
     <>
+      <Navbar sections={sections} />
       <div className="App scroll-smooth">
-        <Navbar sections={sections} />
-
         <SectionLayout id="landing">
           <Landing />
         </SectionLayout>

@@ -16,6 +16,7 @@ const CarouselWrapper = ({ children }: CarouselProp) => {
       centerMode={true}
       infiniteLoop={true}
       showStatus={false}
+      showThumbs={false}
     >
       {children}
     </Carousel>
