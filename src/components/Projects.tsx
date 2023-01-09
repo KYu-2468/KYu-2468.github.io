@@ -28,7 +28,7 @@ const Projects = () => {
 
 const projects: SingleProject[] = [
   {
-    name: "SGS RF Training Website",
+    name: "SGS RF Training",
     description:
       "RF Traning Website helps new SGS RF Test Interns/Technicians/Engineers onboard efficiently and effectively. Please log in with your SGS account to access all learning resources. Please ask managers for your username and password.",
     github: "https://github.com/KYu-2468/RF-Training",
