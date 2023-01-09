@@ -41,8 +41,8 @@ const SkillGroup = ({ skills, group }: SkillGroupProp) => {
               loading="lazy"
             />
             <span className="w-full text-base md:text-3xl m-4 flex justify-around">
-              <span className="w-1/2">{skill.name}</span>
-              <span className="w-1/2 ">{skill.experience}</span>
+              <span className="w-1/3">{skill.name}</span>
+              <span className="w-1/3">{skill.experience}</span>
             </span>
           </li>
         ))}

@@ -6,7 +6,7 @@ interface SectionProp {
 
 const SectionTitle = ({ children }: SectionProp) => {
   return (
-    <h1 className="w-screen flex justify-center py-8 text-4xl md:pl-12 md:block">
+    <h1 className="w-full flex justify-center py-8 text-4xl md:pl-16 md:block">
       {children}
     </h1>
   );
