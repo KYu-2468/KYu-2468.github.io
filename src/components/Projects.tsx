@@ -9,7 +9,7 @@ import netflik from "../assets/img/netflik.gif";
 import chartMyJog from "../assets/img/chart-my-jog.gif";
 import emojiStore from "../assets/img/emoji-store.png";
 import dsa from "../assets/img/dsa.png";
-import portfolio from "../assets/img/portfolio.png";
+import portfolio from "../assets/img/portfolio.gif";
 
 const Projects = () => {
   return (
@@ -52,6 +52,14 @@ const projects: SingleProject[] = [
     image: netflik,
   },
   {
+    name: "Portfolio Website",
+    description:
+      "A portfolio built from scratch by Kevin Yu with TypeScript, React, Tailwind CSS",
+    github: "https://github.com/KYu-2468/KYu-2468.github.io",
+    website: "https://kyu-2468.github.io/",
+    image: portfolio,
+  },
+  {
     name: "Emoji Store",
     description:
       "An awesome E-commerce website built with React, Tailwind, Node, Express.js, PostgreSQL, React-three-fiber, and Spline! ",
@@ -65,14 +73,6 @@ const projects: SingleProject[] = [
     github: "https://github.com/MakeContributions/DSA",
     website: "#projects",
     image: dsa,
-  },
-  {
-    name: "Portfolio Website",
-    description:
-      "A portfolio built from scratch by Kevin Yu with TypeScript, React, Tailwind CSS",
-    github: "",
-    website: "",
-    image: portfolio,
   },
 ];
 
