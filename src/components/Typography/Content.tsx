@@ -5,7 +5,11 @@ interface ContentProps {
 }
 
 const Content = ({ children }: ContentProps) => {
-  return <div className="mx-4 my-2 text-base lg:text-lg">{children}</div>;
+  return (
+    <div className="mx-2 md:mx-4 my-2 text-base text-center md:text-left md:text-lg">
+      {children}
+    </div>
+  );
 };
 
 export default Content;

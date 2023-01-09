@@ -5,7 +5,11 @@ interface SectionProp {
 }
 
 const SectionTitle = ({ children }: SectionProp) => {
-  return <h1 className="ml-12 py-8 text-4xl">{children}</h1>;
+  return (
+    <h1 className="w-screen flex justify-center py-8 text-4xl md:ml-12 md:block">
+      {children}
+    </h1>
+  );
 };
 
 export default SectionTitle;

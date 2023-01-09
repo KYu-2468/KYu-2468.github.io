@@ -22,9 +22,9 @@ const About = () => {
 
 const Image = () => {
   return (
-    <div className="w-2/5 pl-12 flex items-center">
+    <div className="w-full md:w-2/5 md:pl-12 flex justify-center items-center">
       <img
-        className="w-full shadow-lg shadow-black rounded-xl xl:w-4/5"
+        className="w-4/5 md:w-full shadow-lg shadow-black rounded-xl xl:w-4/5"
         src={profileImg}
         alt="profile"
       />
@@ -34,7 +34,7 @@ const Image = () => {
 
 const Info = () => {
   return (
-    <div className="w-3/5 h-auto px-12 flex flex-col">
+    <div className="w-full md:w-3/5 h-auto px-6 md:px-12 flex flex-col">
       <Title>Full-Stack Software Engineer</Title>
       <Content>
         <ul>
