@@ -7,16 +7,17 @@ type SectionProps = {
 export type SectionProp = {
   name: string;
   id: string;
+  icon?: any;
   element: any;
 };
 
 const Navbar = ({ sections }: SectionProps) => {
   return (
     <div className="w-screen h-16 fixed flex justify-between items-center bg-black text-white z-10">
-      <div className="text-3xl grow ml-12">
+      <div className="text-xl md:text-3xl grow ml-12 hidden md:block">
         <p className="drop-shadow-md ">Kevin Yu</p>
       </div>
-      <div className="flex grow flex-nowrap text-2xl justify-evenly">
+      <div className="flex grow flex-nowrap text-lg md:text-2xl justify-evenly">
         {sections.map((sectionProp: SectionProp) => {
           return <NavbarBtn key={sectionProp.id} {...sectionProp} />;
         })}
@@ -25,10 +26,10 @@ const Navbar = ({ sections }: SectionProps) => {
   );
 };
 
-const NavbarBtn = ({ name, id }: SectionProp) => {
+const NavbarBtn = ({ name, id, icon }: SectionProp) => {
   return (
     <a href={`#${id}`} className="hover:animate-bounce">
-      {name}
+      <span>{name}</span>
     </a>
   );
 };

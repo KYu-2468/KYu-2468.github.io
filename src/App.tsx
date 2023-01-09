@@ -13,10 +13,10 @@ const Skills = lazy(() => import("./components/Skills"));
 const Contact = lazy(() => import("./components/Contact"));
 
 const sections: SectionProp[] = [
-  { name: "About", id: "about", element: <About /> },
-  { name: "Projects", id: "projects", element: <Projects /> },
-  { name: "Skills", id: "skills", element: <Skills /> },
-  { name: "Contact", id: "contact", element: <Contact /> },
+  { name: "About", id: "about", icon: "T", element: <About /> },
+  { name: "Projects", id: "projects", icon: "T", element: <Projects /> },
+  { name: "Skills", id: "skills", icon: "T", element: <Skills /> },
+  { name: "Contact", id: "contact", icon: "T", element: <Contact /> },
 ];
 
 function App() {
