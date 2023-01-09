@@ -24,7 +24,7 @@ const Skills = () => {
 };
 
 const SkillGroup = ({ skills, group }: SkillGroupProp) => {
-  const iconStyle = "w-14 h-14 mx-12";
+  const iconStyle = "w-14 h-14 mx-2 md:mx-12";
   return (
     <div className="ml-8 mb-8">
       <Title>{group}</Title>
@@ -40,7 +40,7 @@ const SkillGroup = ({ skills, group }: SkillGroupProp) => {
               alt={skill.name}
               loading="lazy"
             />
-            <span className="w-full text-3xl m-4 flex justify-around">
+            <span className="w-full text-base md:text-3xl m-4 flex justify-around">
               <span className="w-1/2">{skill.name}</span>
               <span className="w-1/2 ">{skill.experience}</span>
             </span>
