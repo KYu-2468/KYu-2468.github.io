@@ -26,7 +26,7 @@ const Skills = () => {
 const SkillGroup = ({ skills, group }: SkillGroupProp) => {
   const iconStyle = "w-14 h-14 mx-2 md:mx-12";
   return (
-    <div className="ml-8 mb-8">
+    <div className="ml-4 md:ml-8 mb-8">
       <Title>{group}</Title>
       <ul>
         {skills.map((skill) => (

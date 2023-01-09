@@ -8,6 +8,11 @@ interface ListItemProp {
   children: any;
 }
 
+interface InfoProp {
+  key: string;
+  value: string;
+}
+
 const About = () => {
   return (
     <>
@@ -34,12 +39,14 @@ const Image = () => {
 
 const Info = () => {
   return (
-    <div className="w-full md:w-3/5 h-auto px-6 md:px-12 flex flex-col">
+    <div className="w-full md:w-3/5 h-auto px-4 md:px-12 flex flex-col">
       <Title>Full-Stack Software Engineer</Title>
       <Content>
         <ul>
-          {infos.map((info: string, index) => (
-            <ListItem key={index}>{info}</ListItem>
+          {infos.map((info: InfoProp, index) => (
+            <ListItem key={index}>
+              {info.key}: <strong>{info.value}</strong>
+            </ListItem>
           ))}
           <li>
             <a href="https://github.com/KYu-2468">
@@ -72,11 +79,11 @@ const ListItem = ({ children }: ListItemProp) => {
   return <li className="mb-2">{children}</li>;
 };
 
-const infos: string[] = [
-  "Professional Experience: <1 year",
-  "Location: San Diego, CA, USA",
-  "Education: Fullstack Academy",
-  "Past Experience: RF Testing (Engineering) - 5 years",
+const infos: InfoProp[] = [
+  { key: "Professional Experience", value: "<1 year" },
+  { key: "Location", value: "San Diego, CA, USA" },
+  { key: "Education", value: "Fullstack Academy" },
+  { key: "Past Experience", value: "RF Testing (Engineering) - 5 years" },
 ];
 
 const quotes: string[] = [
