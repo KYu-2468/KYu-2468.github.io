@@ -17,7 +17,7 @@ const Skills = () => {
         <SkillGroup group="Language" skills={language} />
         <SkillGroup group="Frontend" skills={frontEnd} />
         <SkillGroup group="Backend" skills={backEnd} />
-        <SkillGroup group="Tools" skills={additional} />
+        <SkillGroup group="Tools & Other" skills={additional} />
       </div>
     </>
   );
