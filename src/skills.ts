@@ -11,10 +11,15 @@ import python from "./assets/icon/python.png";
 import node from "./assets/icon/node.png";
 import express from "./assets/icon/express.png";
 import postgresql from "./assets/icon/postgresql.png";
+import restfulApi from "./assets/icon/restful-api.png";
+import graphQL from "./assets/icon/graphql.png";
+
 import git from "./assets/icon/git.png";
 import github from "./assets/icon/github.png";
 import firebase from "./assets/icon/firebase.png";
 import algo from "./assets/icon/lc.png";
+import vsCode from "./assets/icon/vsCode.png";
+import postman from "./assets/icon/postman.png";
 
 export interface Skill {
   name: string;
@@ -36,23 +41,27 @@ export const language: Skill[] = [
 ];
 
 export const frontEnd: Skill[] = [
-  { name: "HTML5", experience: COMPETENT, icon: html },
+  { name: "HTML5", experience: PROFICIENT, icon: html },
   { name: "CSS3", experience: COMPETENT, icon: css },
   { name: "React", experience: PROFICIENT, icon: react },
   { name: "Redux", experience: PROFICIENT, icon: redux },
-  { name: "Tailwind", experience: COMPETENT, icon: tailwind },
+  { name: "Tailwind CSS", experience: COMPETENT, icon: tailwind },
   { name: "Material UI", experience: ADVANCED_BEGINNER, icon: materialUI },
 ];
 
 export const backEnd: Skill[] = [
-  { name: "Node", experience: COMPETENT, icon: node },
-  { name: "Express", experience: COMPETENT, icon: express },
+  { name: "Node", experience: PROFICIENT, icon: node },
+  { name: "Express", experience: PROFICIENT, icon: express },
   { name: "PostgreSQL", experience: COMPETENT, icon: postgresql },
   { name: "Firebase", experience: COMPETENT, icon: firebase },
+  { name: "REST API", experience: COMPETENT, icon: restfulApi },
+  { name: "GraphQL", experience: COMPETENT, icon: graphQL },
 ];
 
 export const additional: Skill[] = [
   { name: "Algorithm & Data Structure", experience: EXPERT, icon: algo },
   { name: "Git", experience: COMPETENT, icon: git },
   { name: "GitHub", experience: COMPETENT, icon: github },
+  { name: "VS Code", experience: PROFICIENT, icon: vsCode },
+  { name: "Postman", experience: COMPETENT, icon: postman },
 ];
