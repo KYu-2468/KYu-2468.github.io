@@ -41,9 +41,9 @@ export const language: Skill[] = [
 ];
 
 export const frontEnd: Skill[] = [
-  { name: "HTML5", experience: PROFICIENT, icon: html },
   { name: "React", experience: PROFICIENT, icon: react },
   { name: "Redux", experience: PROFICIENT, icon: redux },
+  { name: "HTML5", experience: PROFICIENT, icon: html },
   { name: "CSS3", experience: COMPETENT, icon: css },
   { name: "Tailwind CSS", experience: COMPETENT, icon: tailwind },
   { name: "Material UI", experience: ADVANCED_BEGINNER, icon: materialUI },
@@ -55,7 +55,7 @@ export const backEnd: Skill[] = [
   { name: "PostgreSQL", experience: COMPETENT, icon: postgresql },
   { name: "Firebase", experience: COMPETENT, icon: firebase },
   { name: "REST API", experience: COMPETENT, icon: restfulApi },
-  { name: "GraphQL", experience: COMPETENT, icon: graphQL },
+  { name: "GraphQL", experience: ADVANCED_BEGINNER, icon: graphQL },
 ];
 
 export const additional: Skill[] = [
