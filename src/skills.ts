@@ -18,7 +18,7 @@ import git from "./assets/icon/git.png";
 import github from "./assets/icon/github.png";
 import firebase from "./assets/icon/firebase.png";
 import algo from "./assets/icon/lc.png";
-import vsCode from "./assets/icon/vsCode.png";
+import vsCode from "./assets/icon/vs-code.png";
 import postman from "./assets/icon/postman.png";
 
 export interface Skill {
