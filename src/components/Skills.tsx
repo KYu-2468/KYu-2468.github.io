@@ -1,6 +1,6 @@
 import React from "react";
 import SectionTitle from "./Typography/SectionTitle";
-import { language, frontEnd, backEnd, additional, Skill } from "../skills";
+import { language, frontEnd, backEnd, additional, Skill } from "../data/skills";
 import Title from "./Typography/Title";
 
 interface SkillGroupProp {
