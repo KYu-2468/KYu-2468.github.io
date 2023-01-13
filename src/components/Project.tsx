@@ -35,8 +35,8 @@ const Project = ({
   image,
 }: SingleProject) => {
   const projectStyle = [
-    "w-5/6 h-64 md:h-[28rem] 2xl:h-[40rem] my-8 mx-auto",
-    "flex flex-col items-center",
+    "w-5/6 h-64 md:h-[28rem] 2xl:h-full my-8 mx-auto",
+    "flex flex-col items-center relative",
     "bg-black text-white rounded-xl shadow-xl shadow-black",
     "transition ease-in-out hover:scale-110 duration-500",
   ].join(" ");
@@ -49,7 +49,7 @@ const Project = ({
 
   return (
     <div className={projectStyle}>
-      <div className="text-lg md:text-3xl my-2 md:my-4 font-semibold">
+      <div className="text-lg md:text-4xl my-2 md:my-8 font-semibold">
         {name}
       </div>
       <LessInfo image={image} name={name} handleClick={handleClick} />
@@ -71,10 +71,11 @@ const MoreInfo = ({
   handleClick,
   open,
 }: MoreInfoProp) => {
-  console.log(open);
   const moreInfoDefaultStyle =
-    "transition-all ease-in-out duration-700 w-full h-full p-4 bg-white text-black flex flex-col items-center rounded-xl ";
-  const moreInfoAnimationStyle = open ? "-translate-y-full" : "translate-y-0";
+    "absolute h-fit transition-all ease-in-out duration-1000 w-full p-8 text-black flex flex-col items-center rounded-xl inset-x-0 bottom-0 ";
+  const moreInfoAnimationStyle = open
+    ? "bg-white -translate-y-12 "
+    : "bg-white translate-y-full";
   return (
     <div className={moreInfoDefaultStyle + moreInfoAnimationStyle}>
       <div className="p-8 h-fit text-left text-2xl">{description}</div>
@@ -96,9 +97,14 @@ const MoreInfo = ({
 const LessInfo = ({ image, name, handleClick }: LessInfoProp) => {
   return (
     <div className="w-full h-full md:w-4/6">
-      <img className="aspect-video" src={image} alt={name} loading="lazy" />
+      <img
+        className="aspect-video h-3/4"
+        src={image}
+        alt={name}
+        loading="lazy"
+      />
       <button
-        className="m-2 text-base md:text-3xl group transition duration-700 ease-in-out"
+        className="mt-8 text-base md:text-3xl group transition duration-700 ease-in-out"
         onClick={handleClick}
       >
         More Info{" "}

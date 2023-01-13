@@ -11,14 +11,14 @@ interface CarouselProp {
 const CarouselWrapper = ({ children }: CarouselProp) => {
   return (
     <Carousel
-      autoPlay={true}
+      // autoPlay={true}
       emulateTouch={true}
       centerMode={true}
       infiniteLoop={true}
       showStatus={false}
       showThumbs={false}
       showIndicators={false}
-      interval={5000}
+      // interval={5000}
     >
       {children}
     </Carousel>
