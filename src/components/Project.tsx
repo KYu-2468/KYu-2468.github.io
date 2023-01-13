@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Title from "./Typography/Title";
 
 export interface SingleProject {
   name: string;
@@ -74,7 +73,7 @@ const MoreInfo = ({
 }: MoreInfoProp) => {
   console.log(open);
   const moreInfoDefaultStyle =
-    "transition-all ease-in-out duration-700 w-full h-full p-12 bg-white text-black flex flex-col items-center rounded-xl ";
+    "transition-all ease-in-out duration-700 w-full h-full p-4 bg-white text-black flex flex-col items-center rounded-xl ";
   const moreInfoAnimationStyle = open ? "-translate-y-full" : "translate-y-0";
   return (
     <div className={moreInfoDefaultStyle + moreInfoAnimationStyle}>
