@@ -11,7 +11,7 @@ const projects: SingleProject[] = [
   {
     name: "SGS RF Training",
     description:
-      "RF Traning Website helps new SGS RF Test Interns/Technicians/Engineers onboard efficiently and effectively. Please log in with your SGS account to access all learning resources. Please ask managers for your username and password.",
+      "RF Traning Website helps new SGS RF Test Interns / Technicians / Engineers onboard efficiently and effectively. Please log in with your SGS account to access all learning resources. Please ask managers for your username and password.",
     github: "https://github.com/KYu-2468/RF-Training",
     website: "https://rf-training-sgs.web.app/",
     image: rfTrainingSGS,
@@ -33,7 +33,7 @@ const projects: SingleProject[] = [
     image: netflik,
   },
   {
-    name: "Portfolio Website",
+    name: "Portfolio",
     description:
       "A portfolio built from scratch by Kevin Yu with TypeScript, React, Tailwind CSS",
     github: "https://github.com/KYu-2468/KYu-2468.github.io",

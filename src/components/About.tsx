@@ -50,7 +50,7 @@ const Info = () => {
           ))}
           <li>
             <a href="https://github.com/KYu-2468">
-              <button className="transition ease-in-out text-sky-400 hover:-translate-y-1 hover:scale-110 hover:text-sky-600 duration-700">
+              <button className="transition ease-in-out text-sky-700 hover:-translate-y-1 hover:scale-110 duration-700">
                 Check out my GitHub
               </button>
             </a>
