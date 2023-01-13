@@ -35,7 +35,7 @@ const Project = ({
   image,
 }: SingleProject) => {
   const projectStyle = [
-    "w-5/6 h-64 md:h-[28rem] 2xl:h-full my-8 mx-auto",
+    "w-5/6 h-64 md:h-[28rem] 2xl:h-fit my-8 mx-auto",
     "flex flex-col items-center relative",
     "bg-black text-white rounded-xl shadow-xl shadow-black",
     "transition ease-in-out hover:scale-110 duration-500",
@@ -72,9 +72,9 @@ const MoreInfo = ({
   open,
 }: MoreInfoProp) => {
   const moreInfoDefaultStyle =
-    "absolute h-fit transition-all ease-in-out duration-1000 w-full p-8 text-black flex flex-col items-center rounded-xl inset-x-0 bottom-0 ";
+    "absolute h-fit transition-all ease-in-out duration-1000 w-full p-8 mt-4 text-black flex flex-col items-center rounded-xl inset-x-0 bottom-0 ";
   const moreInfoAnimationStyle = open
-    ? "bg-white -translate-y-12 "
+    ? "bg-white -translate-y-0 "
     : "bg-white translate-y-full";
   return (
     <div className={moreInfoDefaultStyle + moreInfoAnimationStyle}>
@@ -96,15 +96,15 @@ const MoreInfo = ({
 
 const LessInfo = ({ image, name, handleClick }: LessInfoProp) => {
   return (
-    <div className="w-full h-full md:w-4/6">
+    <div className="w-full h-full mb-4 md:w-4/6">
       <img
-        className="aspect-video h-3/4"
+        className="aspect-video h-3/5"
         src={image}
         alt={name}
         loading="lazy"
       />
       <button
-        className="mt-8 text-base md:text-3xl group transition duration-700 ease-in-out"
+        className="mt-4 text-base md:text-3xl group transition duration-700 ease-in-out"
         onClick={handleClick}
       >
         More Info{" "}
