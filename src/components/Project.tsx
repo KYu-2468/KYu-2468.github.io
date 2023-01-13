@@ -104,7 +104,7 @@ const LessInfo = ({ image, name, handleClick }: LessInfoProp) => {
         loading="lazy"
       />
       <button
-        className="mt-4 text-base md:text-3xl group transition duration-700 ease-in-out"
+        className="mt-4 pb-4 text-base md:text-3xl group transition duration-700 ease-in-out"
         onClick={handleClick}
       >
         More Info{" "}
