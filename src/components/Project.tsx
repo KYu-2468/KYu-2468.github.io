@@ -49,7 +49,7 @@ const Project = ({
 
   return (
     <div className={projectStyle}>
-      <div className="text-lg md:text-4xl my-2 md:my-8 font-semibold">
+      <div className="text-lg md:text-3xl my-2 md:my-4 font-semibold">
         {name}
       </div>
       <LessInfo image={image} name={name} handleClick={handleClick} />
