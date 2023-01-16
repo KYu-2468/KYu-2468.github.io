@@ -36,8 +36,8 @@ const BEGINNER = "Beginner";
 export const language: Skill[] = [
   { name: "JavaScript", experience: PROFICIENT, icon: javascript },
   { name: "TypeScript", experience: COMPETENT, icon: typescript },
+  { name: "Python", experience: COMPETENT, icon: python },
   { name: "Java", experience: ADVANCED_BEGINNER, icon: java },
-  { name: "Python", experience: BEGINNER, icon: python },
 ];
 
 export const frontEnd: Skill[] = [
