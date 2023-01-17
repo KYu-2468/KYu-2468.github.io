@@ -78,7 +78,7 @@ const MoreInfo = ({
     : "bg-white translate-y-full";
   return (
     <div className={moreInfoDefaultStyle + moreInfoAnimationStyle}>
-      <div className="p-8 h-fit text-left md:text-2xl">{description}</div>
+      <div className="p-8 h-fit text-left md:text-xl">{description}</div>
       <div className="w-full flex flex-nowrap justify-evenly items-center text-base md:text-3xl">
         <BtnWrapper href={github}>GitHub</BtnWrapper>
         <BtnWrapper href={website}>🚀 See it live</BtnWrapper>
@@ -98,7 +98,7 @@ const LessInfo = ({ image, name, handleClick }: LessInfoProp) => {
   return (
     <div className="w-full h-full mb-4 md:w-4/6">
       <img
-        className="aspect-video h-3/5"
+        className="w-full h-3/5 object-contain"
         src={image}
         alt={name}
         loading="lazy"
