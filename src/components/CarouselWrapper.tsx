@@ -18,7 +18,7 @@ const CarouselWrapper = ({ children }: CarouselProp) => {
       showStatus={false}
       showThumbs={false}
       showIndicators={false}
-      interval={5000}
+      interval={15000}
     >
       {children}
     </Carousel>

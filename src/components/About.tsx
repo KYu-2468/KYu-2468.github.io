@@ -3,6 +3,7 @@ import profileImg from "../assets/img/profile-img.png";
 import Content from "./Typography/Content";
 import SectionTitle from "./Typography/SectionTitle";
 import Title from "./Typography/Title";
+import { infos, quotes } from "../data/about";
 
 interface ListItemProp {
   children: any;
@@ -78,18 +79,5 @@ const Info = () => {
 const ListItem = ({ children }: ListItemProp) => {
   return <li className="mb-2">{children}</li>;
 };
-
-const infos: InfoProp[] = [
-  { key: "Professional Experience", value: "<1 year" },
-  { key: "Location", value: "San Diego, CA, USA" },
-  { key: "Education", value: "Fullstack Academy" },
-  { key: "Past Experience", value: "RF Testing (Engineering) - 5 years" },
-];
-
-const quotes: string[] = [
-  '1. "Change is the only constant in life" - Heraclitus?',
-  '2. "Stay hungry. Stay foolish" - Steve Jobs?',
-  "3. “I hear and I forget. I see and I remember. I do and I understand” - Confucius?",
-];
 
 export default About;

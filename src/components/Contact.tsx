@@ -10,7 +10,7 @@ const Contact = () => {
   return (
     <>
       <SectionTitle>Contact 🤝</SectionTitle>
-      <div className="ml-14 mb-8 text-lg">
+      <div className="ml-14 mb-8 text-lg md:text-2xl">
         I'm always happy to connect!
         <br />
         PS: I'm more likely to connect if you send a message 😊
