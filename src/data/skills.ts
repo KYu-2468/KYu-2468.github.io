@@ -20,6 +20,7 @@ import firebase from "../assets/icon/firebase.png";
 import algo from "../assets/icon/lc.png";
 import vsCode from "../assets/icon/vs-code.png";
 import postman from "../assets/icon/postman.png";
+import docker from "../assets/icon/docker.png";
 
 export interface Skill {
   name: string;
@@ -31,7 +32,7 @@ const EXPERT = "Expert";
 const PROFICIENT = "Proficient";
 const COMPETENT = "Competent";
 const ADVANCED_BEGINNER = "Advanced Beginner";
-const BEGINNER = "Beginner";
+// const BEGINNER = "Beginner";
 
 export const language: Skill[] = [
   { name: "JavaScript", experience: PROFICIENT, icon: javascript },
@@ -64,4 +65,5 @@ export const additional: Skill[] = [
   { name: "Git", experience: COMPETENT, icon: git },
   { name: "GitHub", experience: COMPETENT, icon: github },
   { name: "Postman", experience: COMPETENT, icon: postman },
+  { name: "Docker", experience: COMPETENT, icon: docker },
 ];
