@@ -10,7 +10,7 @@
 
 ## 📦 Built from scratch With
 
-- React (TypeScript) - Frontend Architecture
+- Create-React-App (TypeScript) - Frontend Architecture
 - Tailwind CSS - Frontend Styling
 - GitHub Pages - Hosting/Deployment
 
