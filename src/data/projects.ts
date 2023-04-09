@@ -29,7 +29,7 @@ const projects: SingleProject[] = [
     description:
       "Netflix is one of the most popular streaming services currently available in the market. Netflik is built with React, Tailwind, TMDB API, React-Youtube, and AWS Amplify. All current videos are trailers of the corresponding movies.",
     github: "https://github.com/KYu-2468/netflixk",
-    website: "https://dev.d3w3n4pah8m9bk.amplifyapp.com/",
+    website: "https://prod.d3w3n4pah8m9bk.amplifyapp.com",
     image: netflik,
   },
   {
