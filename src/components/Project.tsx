@@ -72,14 +72,14 @@ const MoreInfo = ({
   open,
 }: MoreInfoProp) => {
   const moreInfoDefaultStyle =
-    "absolute h-fit transition-all ease-in-out duration-1000 w-full md:p-8 mt-4 text-black flex flex-col items-center rounded-xl inset-x-0 bottom-0 text-sm ";
+    "absolute h-fit transition-all ease-in-out duration-1000 w-full md:p-8 mt-4 text-black flex flex-col items-center rounded-xl inset-x-0 bottom-0 text-xs ";
   const moreInfoAnimationStyle = open
     ? "bg-white -translate-y-0 "
     : "bg-white translate-y-full";
   return (
     <div className={moreInfoDefaultStyle + moreInfoAnimationStyle}>
-      <div className="p-8 h-fit text-left md:text-xl">{description}</div>
-      <div className="w-full flex flex-nowrap justify-evenly items-center text-base md:text-3xl">
+      <div className="p-4 h-fit text-left md:text-xl">{description}</div>
+      <div className="w-full flex flex-nowrap justify-evenly items-center text-sm md:text-3xl">
         <BtnWrapper href={github}>GitHub</BtnWrapper>
         <BtnWrapper href={website}>🚀 See it live</BtnWrapper>
         <button
