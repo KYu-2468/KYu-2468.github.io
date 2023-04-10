@@ -79,7 +79,7 @@ const MoreInfo = ({
   return (
     <div className={moreInfoDefaultStyle + moreInfoAnimationStyle}>
       <div className="p-4 h-fit text-left md:text-xl">{description}</div>
-      <div className="w-full flex flex-nowrap justify-evenly items-center text-sm md:text-3xl">
+      <div className="w-full flex flex-nowrap justify-evenly items-center text-xs md:text-3xl">
         <BtnWrapper href={github}>GitHub</BtnWrapper>
         <BtnWrapper href={website}>🚀 See it live</BtnWrapper>
         <button
