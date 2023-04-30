@@ -4,6 +4,7 @@ import Content from "./Typography/Content";
 import SectionTitle from "./Typography/SectionTitle";
 import Title from "./Typography/Title";
 import { infos, quotes } from "../data/about";
+import KevinAvatar from "./KevinAvatar";
 
 interface ListItemProp {
   children: any;
@@ -18,17 +19,18 @@ const About = () => {
   return (
     <>
       <SectionTitle>About me</SectionTitle>
-      <div className="flex flex-col lg:flex-row">
+      <div className="flex">
+        <KevinAvatar />
         <Image />
-        <Info />
       </div>
+      <Info />
     </>
   );
 };
 
 const Image = () => {
   return (
-    <div className="w-full md:w-2/5 md:pl-12 flex justify-center items-center">
+    <div className="w-1/2 md:w-2/5 flex justify-center items-center">
       <img
         className="w-4/5 md:w-full shadow-lg shadow-black rounded-xl xl:w-4/5"
         src={profileImg}
