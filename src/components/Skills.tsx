@@ -41,8 +41,8 @@ const SkillGroup = ({ skills, group }: SkillGroupProp) => {
                 alt={skill.name}
                 loading="lazy"
               />
-              <span className="w-1/3">{skill.name}</span>
-              <span className="w-1/3">{skill.experience}</span>
+              <span className="w-1/2">{skill.name}</span>
+              {/* <span className="w-1/3 text-2xl">{skill.experience}</span> */}
             </span>
           </li>
         ))}

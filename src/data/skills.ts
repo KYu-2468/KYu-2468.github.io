@@ -7,7 +7,7 @@ import materialUI from "../assets/icon/material-ui.png";
 import javascript from "../assets/icon/javascript.png";
 import typescript from "../assets/icon/typescript.png";
 import java from "../assets/icon/java.png";
-import python from "../assets/icon/python.png";
+// import python from "../assets/icon/python.png";
 import node from "../assets/icon/node.png";
 import express from "../assets/icon/express.png";
 import postgresql from "../assets/icon/postgresql.png";
@@ -37,8 +37,8 @@ const ADVANCED_BEGINNER = "Advanced Beginner";
 export const language: Skill[] = [
   { name: "JavaScript", experience: PROFICIENT, icon: javascript },
   { name: "TypeScript", experience: COMPETENT, icon: typescript },
-  { name: "Python", experience: COMPETENT, icon: python },
-  { name: "Java", experience: ADVANCED_BEGINNER, icon: java },
+  // { name: "Python", experience: COMPETENT, icon: python },
+  { name: "Java", experience: COMPETENT, icon: java },
 ];
 
 export const frontEnd: Skill[] = [
