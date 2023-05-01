@@ -6,15 +6,17 @@ import ContactButton from "./Button/ContactButton";
 const Contact = () => {
   return (
     <>
-      <SectionTitle>Contact 🤝</SectionTitle>
-      <div className="text-xl mx-16 mb-12">
-        Feel free to connect with me on Linkedin or GitHub. I'm also open to 20
-        minute coffe chats which you can schedule through my calendly below! I
-        would love to chat anything about software engineering, education,
-        games, and health. I look forward hearing from you!
+      <SectionTitle>Contact</SectionTitle>
+      <div className="mx-16 mb-12 text-xl">
+        If you're interested in chatting about anything related to software
+        engineering, education, games, or health, I'd love to connect with you!
+        You can find me on LinkedIn or GitHub, or schedule a 20-minute coffee
+        chat using the link to my Calendly below. I'm always excited to meet new
+        people and learn about their experiences and perspectives. I look
+        forward to hearing from you soon!
       </div>
 
-      <div className=" flex flex-wrap md:justify-evenly">
+      <div className="flex flex-wrap md:justify-evenly">
         <ContactButton
           text="Linkedin"
           textColor="text-white"
@@ -27,6 +29,13 @@ const Contact = () => {
           textColor="text-white"
           buttonColor="bg-black"
           linkURL="https://github.com/KYu-2468"
+        />
+
+        <ContactButton
+          text="LeetCode"
+          textColor="text-white"
+          buttonColor="bg-red-600"
+          linkURL="https://leetcode.com/KYu-2468/"
         />
       </div>
 
