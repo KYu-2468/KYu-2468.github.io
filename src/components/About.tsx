@@ -3,36 +3,24 @@ import profileImg from "../assets/img/profile-img.png";
 import Content from "./Typography/Content";
 import SectionTitle from "./Typography/SectionTitle";
 import Title from "./Typography/Title";
-import { infos, quotes } from "../data/about";
-import KevinAvatar from "./KevinAvatar";
-
-interface ListItemProp {
-  children: any;
-}
-
-interface InfoProp {
-  key: string;
-  value: string;
-}
 
 const About = () => {
   return (
     <>
       <SectionTitle>About me</SectionTitle>
-      <div className="flex">
-        <KevinAvatar />
+      <div className="flex h-full">
         <Image />
+        <Info />
       </div>
-      <Info />
     </>
   );
 };
 
 const Image = () => {
   return (
-    <div className="w-1/2 md:w-2/5 flex justify-center items-center">
+    <div className="flex items-center justify-center w-1/3 md:w-2/5">
       <img
-        className="w-4/5 md:w-full shadow-lg shadow-black rounded-xl xl:w-4/5"
+        className="w-4/5 shadow-lg md:w-full shadow-black rounded-xl xl:w-4/5"
         src={profileImg}
         alt="profile"
       />
@@ -42,44 +30,32 @@ const Image = () => {
 
 const Info = () => {
   return (
-    <div className="w-full md:w-3/5 h-auto px-4 md:px-12 flex flex-col">
+    <div className="flex flex-col w-full h-auto px-4 md:w-3/5 md:px-12">
       <Title>Full-Stack Software Engineer</Title>
-      <Content>
-        <ul>
-          {infos.map((info: InfoProp, index) => (
-            <ListItem key={index}>
-              {info.key}: <strong>{info.value}</strong>
-            </ListItem>
-          ))}
-          <li>
-            <a href="https://github.com/KYu-2468">
-              <button className="transition ease-in-out text-sky-700 hover:-translate-y-1 hover:scale-110 duration-700">
-                Check out my GitHub
-              </button>
-            </a>
-          </li>
-        </ul>
-      </Content>
-      <Content>
-        As a life-long learner, I am enthusiastic learning about mastering new
-        concepts, skills, and technologies to equip myself with tools that make
-        me more competitive and adaptive in this ever-changing world.
-      </Content>
 
-      <Title>Quotes I Love:</Title>
       <Content>
-        <ul>
-          {quotes.map((quote: string, index) => (
-            <ListItem key={index}>{quote}</ListItem>
-          ))}
-        </ul>
+        With proficiency in React, Express.js, Node.js, PostgreSQL, and Google
+        Cloud Platform, Kevin is always expanding his skillset and is currently
+        learning Amazon Web Service.
+      </Content>
+      <Content>
+        Before becoming a software engineer, Kevin spent over 5 years as a
+        Wireless Test Technician, where he developed the valuable skills of
+        problem-solving and self-taught coding to increase his productivity at
+        work.
+      </Content>
+      <Content>
+        In his free time, Kevin loves to dive into novels, watch movies, and
+        play games. Swimming is one of his favorite sports because the cold
+        water helps him explore and focus on different things, such as life, the
+        universe, and coding.
+      </Content>
+      <Content>
+        Collaboration, positivity, and a non-toxic environment are values that
+        Kevin holds dear.
       </Content>
     </div>
   );
-};
-
-const ListItem = ({ children }: ListItemProp) => {
-  return <li className="mb-2">{children}</li>;
 };
 
 export default About;
