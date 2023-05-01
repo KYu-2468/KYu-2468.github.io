@@ -3,9 +3,9 @@ import { SingleProject } from "../components/Project";
 import rfTrainingSGS from "../assets/img/rf-training-sgs.gif";
 import netflik from "../assets/img/netflik.gif";
 import chartMyJog from "../assets/img/chart-my-jog.gif";
-import emojiStore from "../assets/img/emoji-store.png";
-import dsa from "../assets/img/dsa.png";
-import portfolio from "../assets/img/portfolio.gif";
+// import emojiStore from "../assets/img/emoji-store.png";
+// import dsa from "../assets/img/dsa.png";
+// import portfolio from "../assets/img/portfolio.gif";
 
 const projects: SingleProject[] = [
   {
@@ -32,30 +32,30 @@ const projects: SingleProject[] = [
     website: "https://prod.d3w3n4pah8m9bk.amplifyapp.com",
     image: netflik,
   },
-  {
-    name: "Portfolio",
-    description:
-      "This portfolio website was built from scratch by Kevin Yu with TypeScript, React, Tailwind, and GitHub Pages.",
-    github: "https://github.com/KYu-2468/KYu-2468.github.io",
-    website: "https://kyu-2468.github.io/",
-    image: portfolio,
-  },
-  {
-    name: "Emoji Store",
-    description:
-      "An awesome E-commerce website built with React, Tailwind, Node.js, Express.js, PostgreSQL, React-three-fiber, Spline, and Stripe API! Users can purchase and sell emojis via our website. Payment methods are implemented using Stripe API.",
-    github: "https://github.com/KYu-2468/EmojiStore",
-    website: "#projects",
-    image: emojiStore,
-  },
-  {
-    name: "DSA",
-    description:
-      "An open source project that aims to help new software engineers learn how to contribute to open source projects through implementing efficient data structures and algorithms.",
-    github: "https://github.com/MakeContributions/DSA",
-    website: "#projects",
-    image: dsa,
-  },
+  // {
+  //   name: "Portfolio",
+  //   description:
+  //     "This portfolio website was built from scratch by Kevin Yu with TypeScript, React, Tailwind, and GitHub Pages.",
+  //   github: "https://github.com/KYu-2468/KYu-2468.github.io",
+  //   website: "https://kyu-2468.github.io/",
+  //   image: portfolio,
+  // },
+  // {
+  //   name: "Emoji Store",
+  //   description:
+  //     "An awesome E-commerce website built with React, Tailwind, Node.js, Express.js, PostgreSQL, React-three-fiber, Spline, and Stripe API! Users can purchase and sell emojis via our website. Payment methods are implemented using Stripe API.",
+  //   github: "https://github.com/KYu-2468/EmojiStore",
+  //   website: "#projects",
+  //   image: emojiStore,
+  // },
+  // {
+  //   name: "DSA",
+  //   description:
+  //     "An open source project that aims to help new software engineers learn how to contribute to open source projects through implementing efficient data structures and algorithms.",
+  //   github: "https://github.com/MakeContributions/DSA",
+  //   website: "#projects",
+  //   image: dsa,
+  // },
 ];
 
 export default projects;
