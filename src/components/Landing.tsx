@@ -1,23 +1,44 @@
 import React from "react";
-import background from "../assets/video/background.mp4";
+import KevinAvatar from "./KevinAvatar";
+import ContactButton from "./Button/ContactButton";
 
 const Landing = () => {
   return (
-    <div className="relative pt-12">
-      <video
-        className="w-screen -z-20"
-        src={background}
-        autoPlay
-        loop
-        muted
-        playsInline
-        poster="background-poster.png"
-      />
-      <div className="w-full h-full absolute top-0 left-0 flex flex-col items-center justify-center font-semibold text-white text-xl md:text-7xl">
-        <div className="mt-8 md:mb-4">Hi there! I'm Kevin - </div>
-        <div className="my-4">A software developer</div>
+    <>
+      <div className="flex h-full pt-20">
+        <KevinAvatar />
+        <div className="flex flex-col items-center w-1/2 h-full px-8 pt-12 text-2xl">
+          <div className="w-2/3 ">
+            Meet Kevin, a driven and enthusiastic{" "}
+            <strong>full stack software engineer</strong> who is fueled by
+            curiosity and passion.
+          </div>
+
+          <div className="flex flex-col items-center mt-12 space-y-6 md:justify-evenly">
+            <ContactButton
+              text="Linkedin"
+              textColor="text-white"
+              buttonColor="bg-sky-600"
+              linkURL="https://www.linkedin.com/in/kevinyu2468/"
+            />
+
+            <ContactButton
+              text="GitHub"
+              textColor="text-white"
+              buttonColor="bg-black"
+              linkURL="https://github.com/KYu-2468"
+            />
+
+            <ContactButton
+              text="LeetCode"
+              textColor="text-white"
+              buttonColor="bg-red-600"
+              linkURL="https://leetcode.com/KYu-2468/"
+            />
+          </div>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

@@ -6,7 +6,7 @@ const animationSrc = "/male-idle.glb";
 
 export default function KevinAvatar() {
   return (
-    <div className="h-screen w-1/2">
+    <div className="w-1/2">
       <Avatar
         ambientLightColor="#fff5b6"
         ambientLightIntensity={0.25}
