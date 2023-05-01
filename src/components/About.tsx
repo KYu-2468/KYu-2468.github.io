@@ -18,7 +18,7 @@ const About = () => {
 
 const Image = () => {
   return (
-    <div className="flex items-center justify-center w-1/3 md:w-2/5">
+    <div className="flex items-center justify-center w-1/3 ml-8 md:w-2/5">
       <img
         className="w-4/5 shadow-lg md:w-full shadow-black rounded-xl xl:w-4/5"
         src={profileImg}
