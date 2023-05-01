@@ -11,14 +11,12 @@ interface SkillGroupProp {
 const Skills = () => {
   return (
     <>
-      <SectionTitle>Skills 🔧</SectionTitle>
+      <SectionTitle>Skills</SectionTitle>
 
-      <div>
-        <SkillGroup group="Language" skills={language} />
-        <SkillGroup group="Frontend" skills={frontEnd} />
-        <SkillGroup group="Backend" skills={backEnd} />
-        <SkillGroup group="Tools & Other" skills={additional} />
-      </div>
+      <SkillGroup group="Language" skills={language} />
+      <SkillGroup group="Frontend" skills={frontEnd} />
+      <SkillGroup group="Backend" skills={backEnd} />
+      <SkillGroup group="Tools & Other" skills={additional} />
     </>
   );
 };

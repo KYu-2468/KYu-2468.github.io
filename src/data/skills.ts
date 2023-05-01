@@ -17,7 +17,7 @@ import graphQL from "../assets/icon/graphql.png";
 import git from "../assets/icon/git.png";
 import github from "../assets/icon/github.png";
 import firebase from "../assets/icon/firebase.png";
-import algo from "../assets/icon/lc.png";
+// import algo from "../assets/icon/lc.png";
 import vsCode from "../assets/icon/vs-code.png";
 import postman from "../assets/icon/postman.png";
 import docker from "../assets/icon/docker.png";
@@ -28,7 +28,7 @@ export interface Skill {
   icon: any;
 }
 
-const EXPERT = "Expert";
+// const EXPERT = "Expert";
 const PROFICIENT = "Proficient";
 const COMPETENT = "Competent";
 const ADVANCED_BEGINNER = "Advanced Beginner";
@@ -60,7 +60,7 @@ export const backEnd: Skill[] = [
 ];
 
 export const additional: Skill[] = [
-  { name: "Algorithm & Data Structure", experience: EXPERT, icon: algo },
+  // { name: "Algorithm & Data Structure", experience: EXPERT, icon: algo },
   { name: "VS Code", experience: PROFICIENT, icon: vsCode },
   { name: "Git", experience: COMPETENT, icon: git },
   { name: "GitHub", experience: COMPETENT, icon: github },
