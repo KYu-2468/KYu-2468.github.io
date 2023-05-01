@@ -36,7 +36,7 @@ const Info = () => {
       <Content>
         With proficiency in React, Express.js, Node.js, PostgreSQL, and Google
         Cloud Platform, Kevin is always expanding his skillset and is currently
-        learning Amazon Web Service.
+        learning Amazon Web Service and Spring-boot.
       </Content>
       <Content>
         Before becoming a software engineer, Kevin spent over 5 years as a
@@ -52,7 +52,11 @@ const Info = () => {
       </Content>
       <Content>
         Collaboration, positivity, and a non-toxic environment are values that
-        Kevin holds dear.
+        Kevin holds dear. Kevin is currently seeking new opportunities to
+        develop his skills as a software engineer. He enjoys the challenge of
+        problem-solving and is particularly interested in debugging and
+        researching solutions. Kevin is passionate about industries that have a
+        positive impact on people's well-being.
       </Content>
     </div>
   );

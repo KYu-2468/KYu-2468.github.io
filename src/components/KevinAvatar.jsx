@@ -12,7 +12,7 @@ export default function KevinAvatar() {
         ambientLightIntensity={0.25}
         animationSrc={animationSrc}
         cameraInitialDistance={3}
-        cameraTarget={1.5}
+        cameraTarget={1.6}
         cameraZoomTarget={[
           {
             x: 0,
@@ -33,7 +33,7 @@ export default function KevinAvatar() {
         modelSrc={modelSrc}
         onLoaded={function noRefCheck() {}}
         onLoading={function noRefCheck() {}}
-        scale={1}
+        scale={1.1}
         shadows
         spotLightAngle={0.314}
         spotLightColor="#fff5b6"
