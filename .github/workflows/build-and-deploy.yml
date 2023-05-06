@@ -29,7 +29,10 @@ jobs:
       - run: npm run build --if-present
       - run: git config --global user.email "Kevin.Yu.2468@gmail.com"
       - run: git config --global user.name "Kevin Yu"
-      - run: npm run deploy
+      - name: deploy
+        run: npm run deploy
+        env:
+          GITHUB_TOKEN: ${{secrets.PERSONAL_ACCESS_TOKEN}}
       # - name: Deploy
       #   uses: JamesIves/github-pages-deploy-action@v4
       #   with:
