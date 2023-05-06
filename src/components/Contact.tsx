@@ -34,27 +34,6 @@ const Contact = () => {
           buttonColor="bg-red-600"
           linkURL="https://leetcode.com/KYu-2468/"
         />
-
-        <ContactButton
-          text="LeetCode"
-          textColor="text-white"
-          buttonColor="bg-red-600"
-          linkURL="https://leetcode.com/KYu-2468/"
-        />
-
-        <ContactButton
-          text="LeetCode"
-          textColor="text-white"
-          buttonColor="bg-red-600"
-          linkURL="https://leetcode.com/KYu-2468/"
-        />
-
-        <ContactButton
-          text="LeetCode"
-          textColor="text-white"
-          buttonColor="bg-red-600"
-          linkURL="https://leetcode.com/KYu-2468/"
-        />
       </div>
 
       <Calendly />
