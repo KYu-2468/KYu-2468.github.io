@@ -6,7 +6,7 @@ interface ContentProps {
 
 const Content = ({ children }: ContentProps) => {
   return (
-    <div className="mx-2 md:mx-4 my-2 text-base text-center md:text-left md:text-xl">
+    <div className="mx-2 my-2 text-base text-left md:mx-4 md:text-left md:text-xl">
       {children}
     </div>
   );
