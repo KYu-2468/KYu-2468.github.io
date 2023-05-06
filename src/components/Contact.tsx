@@ -13,7 +13,7 @@ const Contact = () => {
         forward to meeting you soon!
       </div>
 
-      <div className="flex flex-col items-center mb-6 space-y-6 md:flex-row md:flex-wrap md:justify-evenly">
+      <div className="flex flex-col items-center mb-6 space-y-6 md:space-y-0 md:flex-row md:flex-wrap md:justify-evenly">
         <ContactButton
           text="Linkedin"
           textColor="text-white"
