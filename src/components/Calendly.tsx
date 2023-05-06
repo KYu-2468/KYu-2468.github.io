@@ -10,7 +10,7 @@ export default function Calendly() {
   }, []);
 
   const isSmallScreen = useMediaQuery("(max-width: 600px)");
-  const isMediumScreen = useMediaQuery("(min-width: 600px)");
+  const isMediumScreen = useMediaQuery("(max-width: 1000px)");
 
   const calendlyStyle = {
     minWidth: "320px",
