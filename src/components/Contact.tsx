@@ -7,16 +7,13 @@ const Contact = () => {
   return (
     <>
       <SectionTitle>Contact</SectionTitle>
-      <div className="mx-16 mb-12 text-xl">
-        If you're interested in chatting about anything related to software
-        engineering, education, games, or health, I'd love to connect with you!
-        You can find me on LinkedIn or GitHub, or schedule a 20-minute coffee
-        chat using the link to my Calendly below. I'm always excited to meet new
+      <div className="mx-6 mb-12 text-base md:mx-16 md:text-xl">
+        Schedule a 20-minute coffee chat below! I'm always excited to meet new
         people and learn about their experiences and perspectives. I look
-        forward to hearing from you soon!
+        forward to meeting you soon!
       </div>
 
-      <div className="flex flex-wrap md:justify-evenly">
+      <div className="flex flex-col items-center mb-6 space-y-6 md:flex-wrap md:justify-evenly">
         <ContactButton
           text="Linkedin"
           textColor="text-white"

@@ -6,7 +6,7 @@ interface TitleProps {
 
 const Title = ({ children }: TitleProps) => {
   return (
-    <div className="text-lg md:text-3xl m-4 font-semibold">{children}</div>
+    <div className="m-4 text-lg font-semibold md:text-3xl">{children}</div>
   );
 };
 

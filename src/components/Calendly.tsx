@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { useMediaQuery } from "usehooks-ts";
 
 export default function Calendly() {
   useEffect(() => {
@@ -8,11 +9,19 @@ export default function Calendly() {
     document.body.appendChild(script);
   }, []);
 
+  const isSmallScreen = useMediaQuery("(max-width: 600px)");
+  const isMediumScreen = useMediaQuery("(min-width: 600px)");
+
+  const calendlyStyle = {
+    minWidth: "320px",
+    height: isSmallScreen ? "1000px" : isMediumScreen ? "1100px" : "660px",
+  };
+
   return (
     <div
       className="calendly-inline-widget"
       data-url="https://calendly.com/kevin-yu-2468/20-min-chat"
-      style={{ minWidth: "320px", height: "660px" }}
+      style={calendlyStyle}
     ></div>
   );
 }

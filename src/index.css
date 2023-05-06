@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .btn-primary {
+    @apply flex items-center justify-center h-12 text-xl transition-all duration-500 ease-in-out rounded-lg w-36 md:text-2xl md:w-56 md:h-16 hover:scale-110 flex-nowrap;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
