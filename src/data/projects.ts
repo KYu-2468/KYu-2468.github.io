@@ -1,28 +1,28 @@
 import { SingleProject } from "../components/Project";
 
-import rfTrainingSGS from "../assets/img/rf-training-sgs.gif";
-import netflik from "../assets/img/netflik.gif";
-import chartMyJog from "../assets/img/chart-my-jog.gif";
+import rfTrainingSGS from "../assets/video/rfTrainingSGS.mp4";
+import netflik from "../assets/video/netflik.mp4";
+import chartMyJog from "../assets/video/chartMyJog.mp4";
 // import emojiStore from "../assets/img/emoji-store.png";
 // import dsa from "../assets/img/dsa.png";
 // import portfolio from "../assets/img/portfolio.gif";
 
 const projects: SingleProject[] = [
   {
-    name: "RF Training",
-    description:
-      "RF Traning Website is an independent project built with React, Tailwind, Windmill, and Firebase. It enabled new SGS hires (Interns, Technicians, and Engineers) to learn 4G/5G RF system operations, improved the efficiency of the onboarding process by 55%, and reduced the cost of training by 65%. Firebase Authentication and Storage Security rules are implemented to protect sensitive materials from unauthorized personnel.",
-    github: "https://github.com/KYu-2468/RF-Training",
-    website: "https://rf-training-sgs.web.app/",
-    image: rfTrainingSGS,
-  },
-  {
     name: "Chart My Jog",
     description:
       "Chart My Jog is a fitness application built with React, Tailwind, Material UI, Firebase, Firestore, Mapbox API, Leaflet, React-leaflet, and Geolocation API. Chart My Jog helps users track and record their jogs in real-time and render their route on a digital map. Users can view and share their accomplishments and track their progress throughout their lifetime.",
     github: "https://github.com/KYu-2468/ChartMyJog",
     website: "https://chart-my-jog.web.app/",
-    image: chartMyJog,
+    video: chartMyJog,
+  },
+  {
+    name: "RF Training",
+    description:
+      "RF Traning Website is an independent project built with React, Tailwind, Windmill, and Firebase. It enabled new SGS hires (Interns, Technicians, and Engineers) to learn 4G/5G RF system operations, improved the efficiency of the onboarding process by 55%, and reduced the cost of training by 65%. Firebase Authentication and Storage Security rules are implemented to protect sensitive materials from unauthorized personnel.",
+    github: "https://githucharb.com/KYu-2468/RF-Training",
+    website: "https://rf-training-sgs.web.app/",
+    video: rfTrainingSGS,
   },
   {
     name: "NetfliK",
@@ -30,7 +30,7 @@ const projects: SingleProject[] = [
       "Netflix is one of the most popular streaming services currently available in the market. Netflik is built with React, Tailwind, TMDB API, React-Youtube, and AWS Amplify. All current videos are trailers of the corresponding movies.",
     github: "https://github.com/KYu-2468/netflixk",
     website: "https://prod.d3w3n4pah8m9bk.amplifyapp.com",
-    image: netflik,
+    video: netflik,
   },
   // {
   //   name: "Portfolio",
