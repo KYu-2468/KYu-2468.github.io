@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import KevinAvatar from "./KevinAvatar";
 import ContactButton from "./Button/ContactButton";

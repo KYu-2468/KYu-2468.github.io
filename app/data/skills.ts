@@ -1,26 +1,24 @@
-import react from "../assets/icon/react.png";
-import redux from "../assets/icon/redux.png";
-import tailwind from "../assets/icon/tailwind.png";
-import html from "../assets/icon/html.png";
-import css from "../assets/icon/css.png";
-import materialUI from "../assets/icon/material-ui.png";
-import javascript from "../assets/icon/javascript.png";
-import typescript from "../assets/icon/typescript.png";
-import java from "../assets/icon/java.png";
-// import python from "../assets/icon/python.png";
-import node from "../assets/icon/node.png";
-import express from "../assets/icon/express.png";
-import postgresql from "../assets/icon/postgresql.png";
-import restfulApi from "../assets/icon/restful-api.png";
-import graphQL from "../assets/icon/graphql.png";
+const react = "./icon/react.png";
+const redux = "./icon/redux.png";
+const tailwind = "./icon/tailwind.png";
+const html = "./icon/html.png";
+const css = "./icon/css.png";
+const materialUI = "./icon/material-ui.png";
+const javascript = "./icon/javascript.png";
+const typescript = "./icon/typescript.png";
+const java = "./icon/java.png";
+const node = "./icon/node.png";
+const express = "./icon/express.png";
+const postgresql = "./icon/postgresql.png";
+const restfulApi = "./icon/restful-api.png";
+const graphQL = "./icon/graphql.png";
 
-import git from "../assets/icon/git.png";
-import github from "../assets/icon/github.png";
-import firebase from "../assets/icon/firebase.png";
-// import algo from "../assets/icon/lc.png";
-import vsCode from "../assets/icon/vs-code.png";
-import postman from "../assets/icon/postman.png";
-import docker from "../assets/icon/docker.png";
+const git = "./icon/git.png";
+const github = "./icon/github.png";
+const firebase = "./icon/firebase.png";
+const vsCode = "./icon/vs-code.png";
+const postman = "./icon/postman.png";
+const docker = "./icon/docker.png";
 
 export interface Skill {
   name: string;

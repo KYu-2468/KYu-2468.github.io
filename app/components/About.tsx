@@ -1,9 +1,9 @@
 import React from "react";
-import profileImg from "../assets/img/profile-img.png";
 import Content from "./Typography/Content";
 import SectionTitle from "./Typography/SectionTitle";
 import Title from "./Typography/Title";
 
+const profileImg = "./img/profile-img.png";
 const About = () => {
   return (
     <>
