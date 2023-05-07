@@ -1,8 +1,9 @@
 import { SingleProject } from "../components/Project";
 
-import rfTrainingSGS from "../assets/video/rfTrainingSGS.mp4";
-import netflik from "../assets/video/netflik.mp4";
-import chartMyJog from "../assets/video/chartMyJog.mp4";
+const rfTrainingSGS = "./video/rfTrainingSGS.mp4";
+const netflik = "./video/netflik.mp4";
+const chartMyJog = "./video/chartMyJog.mp4";
+
 // import emojiStore from "../assets/img/emoji-store.png";
 // import dsa from "../assets/img/dsa.png";
 // import portfolio from "../assets/img/portfolio.gif";

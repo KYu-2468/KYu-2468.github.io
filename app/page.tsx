@@ -1,5 +1,5 @@
 import React, { lazy, Suspense } from "react";
-import "./App.css";
+import "./globals.css";
 
 import SectionLayout from "./components/SectionLayout";
 
