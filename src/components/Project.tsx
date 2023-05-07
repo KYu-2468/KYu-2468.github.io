@@ -30,7 +30,7 @@ const Project = ({
       </h2>
       <div className="flex flex-col mx-4 mb-16 xl:flex-row xl:justify-evenly">
         <div className="p-4 mx-auto bg-black h-fit">
-          <video loop autoPlay muted>
+          <video loop autoPlay muted={true} playsInline>
             <source src={video} type="video/mp4" />
           </video>
         </div>
