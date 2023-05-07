@@ -5,7 +5,6 @@ import SectionLayout from "./components/SectionLayout";
 
 import Navbar, { SectionProp } from "./components/Navbar";
 import Landing from "./components/Landing";
-import Loading from "./components/Loading";
 
 const About = lazy(() => import("./components/About"));
 const Projects = lazy(() => import("./components/Projects"));
@@ -30,7 +29,7 @@ function App() {
 
         {sections.map(({ id, element }: SectionProp) => {
           return (
-            <Suspense key={id} fallback={<Loading />}>
+            <Suspense key={id} fallback={<></>}>
               <SectionLayout id={id}>{element}</SectionLayout>
             </Suspense>
           );
