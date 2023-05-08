@@ -5,7 +5,7 @@ import KevinAvatar from "./KevinAvatar";
 import ContactButton from "./Button/ContactButton";
 import "./Landing.css";
 import { TypeAnimation } from "react-type-animation";
-const profileImg = "./img/profile-img.png";
+const profileImg = "./img/profile-img.webp";
 
 const Landing = () => {
   const [is3DModelActivated, setIs3DModelActivated] = useState(false);
