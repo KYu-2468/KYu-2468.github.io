@@ -2,6 +2,7 @@
 
 import React from "react";
 import { Avatar } from "@readyplayerme/visage";
+import { ColorRing } from "react-loader-spinner";
 
 const modelSrc = "kevin-avatar.glb"; // this can be a relative or absolute URL
 const animationSrc = "/male-idle.glb";
@@ -12,7 +13,7 @@ export default function KevinAvatar() {
       ambientLightColor="#fff5b6"
       ambientLightIntensity={0.25}
       animationSrc={animationSrc}
-      cameraInitialDistance={3}
+      cameraInitialDistance={2.5}
       cameraTarget={1.6}
       cameraZoomTarget={[
         {
@@ -23,14 +24,15 @@ export default function KevinAvatar() {
       ]}
       dirLightColor="#002aff"
       dirLightIntensity={5}
-      dirLightPosition={[
-        {
-          x: -3,
-          y: 5,
-          z: -5,
-        },
-      ]}
+      dirLightPosition={{
+        x: -3,
+        y: 5,
+        z: -5,
+        "_constructor-name_": "Vector3",
+      }}
       environment="city"
+      headMovement
+      idleRotation
       modelSrc={modelSrc}
       onLoaded={function noRefCheck() {}}
       onLoading={function noRefCheck() {}}
@@ -49,6 +51,17 @@ export default function KevinAvatar() {
       style={{
         background: "transparent",
       }}
+      loader={
+        <ColorRing
+          visible={true}
+          height="80"
+          width="80"
+          ariaLabel="blocks-loading"
+          wrapperStyle={{}}
+          wrapperClass="blocks-wrapper"
+          colors={["red", "white", "blue", "green", "yellow"]}
+        />
+      }
     />
   );
 }
