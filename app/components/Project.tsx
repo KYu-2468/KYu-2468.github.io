@@ -51,7 +51,7 @@ const Info = ({ description, github, website }: InfoProp) => {
       <p className="p-4 text-left h-fit md:text-xl xl:mb-8 xl:text-2xl">
         {description}
       </p>
-      <div className="flex flex-col items-center w-full space-y-6 text-xs md:space-y-0 flex-nowrap justify-evenly md:text-3xl md:flex-row">
+      <div className="flex flex-col items-center w-full text-xs flex-nowrap justify-evenly md:text-3xl md:flex-row">
         <ProjectButtonn
           buttonColor="bg-black"
           text="GitHub"

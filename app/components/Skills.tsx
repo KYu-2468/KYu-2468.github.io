@@ -24,15 +24,15 @@ const Skills = () => {
 const SkillGroup = ({ skills, group }: SkillGroupProp) => {
   const iconStyle = "w-14 h-14 mx-2 md:mx-12";
   return (
-    <div className="w-full pl-4 md:pl-8 mb-8">
+    <div className="w-full pl-4 mb-8 md:pl-8">
       <Title>{group}</Title>
-      <ul className="w-full flex flex-wrap">
+      <ul className="flex flex-wrap w-full">
         {skills.map((skill) => (
           <li
             key={skill.name}
-            className="w-full md:w-1/2 flex flex-nowrap items-center justify-center"
+            className="flex items-center justify-center w-full md:w-1/2 flex-nowrap"
           >
-            <span className="w-full text-base md:text-3xl m-4 flex justify-around md:justify-center">
+            <span className="flex items-center justify-around w-full m-4 text-base md:text-3xl md:justify-center">
               <img
                 className={iconStyle}
                 src={skill.icon}
