@@ -5,13 +5,16 @@ import KevinAvatar from "./KevinAvatar";
 import ContactButton from "./Button/ContactButton";
 import "./Landing.css";
 import { TypeAnimation } from "react-type-animation";
+import Calendly from "./Calendly";
 const profileImg = "./img/profile-img.webp";
 
 const Landing = () => {
   const [is3DModelActivated, setIs3DModelActivated] = useState(false);
+
   function handle3DModelActivation() {
     setIs3DModelActivated(!is3DModelActivated);
   }
+
   return (
     <>
       <div className="flex h-full pt-24">
@@ -19,19 +22,19 @@ const Landing = () => {
           {is3DModelActivated ? <KevinAvatar /> : <Image />}
         </div>
         <div className="flex flex-col items-center w-1/2 h-full px-2 pt-12 text-2xl">
-          <div className="h-24 md:w-1/2">
+          <div className="h-9">
             <TypeAnimation
               className="text-xl md:text-3xl"
               sequence={[
                 "👋 Hey there!",
                 2000,
-                "👈 I am Kevin",
+                "👈 I'm Kevin",
                 2000,
-                "I am driven and enthusiastic 🧠",
+                "I'm driven and enthusiastic 🧠",
                 1000,
-                "I am a full stack engineer 📱",
+                "I'm a full stack engineer 📱",
                 2000,
-                "I am fueled by curiosity and passion 🧐",
+                "I'm fueled by curiosity and passion 🧐",
                 2000,
               ]}
               wrapper="span"
@@ -40,10 +43,10 @@ const Landing = () => {
             />
           </div>
 
-          <div className="flex flex-col items-center w-1/2 mt-12 md:justify-evenly">
+          <div className="flex flex-col items-center w-1/2 mt-12">
             <button
               onClick={handle3DModelActivation}
-              className="font-bold text-white bg-green-500 btn-primary"
+              className="font-bold text-white bg-red-600 btn-primary"
             >
               {is3DModelActivated ? "Stop" : "Start"} 3D
             </button>
@@ -57,16 +60,11 @@ const Landing = () => {
             <ContactButton
               text="GitHub"
               textColor="text-white"
-              buttonColor="bg-black"
+              buttonColor="bg-black dark:bg-neutral-800"
               linkURL="https://github.com/KYu-2468"
             />
 
-            <ContactButton
-              text="LeetCode"
-              textColor="text-white"
-              buttonColor="bg-red-600"
-              linkURL="https://leetcode.com/KYu-2468/"
-            />
+            <Calendly />
           </div>
         </div>
       </div>

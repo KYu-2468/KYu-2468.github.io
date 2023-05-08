@@ -1,12 +1,12 @@
 # Kevin Yu's Portfolio Website
 
 <p align="center">
-  <a href="https://kyu-2468.github.io/">
+  <a href="https://kevin-yu.vercel.app/">
     <img alt="Demo" width="600" src="./src/assets/img/portfolio.gif">
   </a>
 </p>
 
-🚀 [See it live](https://kyu-2468.github.io/)
+🚀 [See it live](https://kevin-yu.vercel.app/)
 
 ## 📦 Built from scratch With
 

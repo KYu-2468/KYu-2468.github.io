@@ -1,5 +1,6 @@
 import React from "react";
 import ProjectButtonn from "./Button/ProjectButton";
+import Content from "./Typography/Content";
 
 export interface SingleProject {
   name: string;
@@ -47,13 +48,13 @@ const Project = ({
 
 const Info = ({ description, github, website }: InfoProp) => {
   return (
-    <div className="flex flex-col items-center justify-center mt-4 text-xs text-black md:mt-0 xl:w-1/3 xl:justify-center md:p-4 rounded-xl">
-      <p className="p-4 text-left h-fit md:text-xl xl:mb-8 xl:text-2xl">
-        {description}
-      </p>
+    <div className="flex flex-col items-center justify-center mt-4 text-base md:mt-0 xl:w-1/3 xl:justify-center md:p-4 rounded-xl">
+      {/* <p className="p-4 text-left h-fit md:text-xl xl:mb-8 xl:text-2xl"> */}
+      <Content>{description}</Content>
+      {/* </p> */}
       <div className="flex flex-col items-center w-full text-xs flex-nowrap justify-evenly md:text-3xl md:flex-row">
         <ProjectButtonn
-          buttonColor="bg-black"
+          buttonColor="bg-black dark:bg-neutral-800"
           text="GitHub"
           textColor="text-white"
           linkURL={github}

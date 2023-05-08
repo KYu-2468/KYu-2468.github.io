@@ -21,7 +21,7 @@ const projects: SingleProject[] = [
     name: "RF Training",
     description:
       "RF Traning Website is an independent project built with React, Tailwind, Windmill, and Firebase. It enabled new SGS hires (Interns, Technicians, and Engineers) to learn 4G/5G RF system operations, improved the efficiency of the onboarding process by 55%, and reduced the cost of training by 65%. Firebase Authentication and Storage Security rules are implemented to protect sensitive materials from unauthorized personnel.",
-    github: "https://githucharb.com/KYu-2468/RF-Training",
+    github: "https://github.com/KYu-2468/RF-Training",
     website: "https://rf-training-sgs.web.app/",
     video: rfTrainingSGS,
   },
