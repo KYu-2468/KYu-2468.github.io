@@ -1,12 +1,13 @@
 "use client";
 
-import React, { useState } from "react";
-import KevinAvatar from "./KevinAvatar";
+import React, { useState, lazy, Suspense } from "react";
 import ContactButton from "./Button/ContactButton";
 import "./Landing.css";
 import { TypeAnimation } from "react-type-animation";
 import Calendly from "./Calendly";
+import LoadingRing from "./Loading/LoadingRing";
 const profileImg = "./img/profile-img-square.webp";
+const KevinAvatar = lazy(() => import("./KevinAvatar"));
 
 const Landing = () => {
   const [is3DModelActivated, setIs3DModelActivated] = useState(false);
@@ -19,7 +20,13 @@ const Landing = () => {
     <>
       <div className="flex flex-col items-center h-full pt-24 md:flex-row">
         <div className="flex items-center justify-center flex-grow w-1/2 h-full">
-          {is3DModelActivated ? <KevinAvatar /> : <Image />}
+          {is3DModelActivated ? (
+            <Suspense fallback={<LoadingRing />}>
+              <KevinAvatar />
+            </Suspense>
+          ) : (
+            <Image />
+          )}
         </div>
         <div className="flex flex-col items-center w-1/2 h-full px-2 pt-12 text-2xl">
           <div className="h-9">
