@@ -23,11 +23,9 @@ const Navbar = ({ sections }: SectionProps) => {
         window.matchMedia("(prefers-color-scheme: dark)").matches)
     ) {
       document.documentElement.classList.add("dark");
-
       setIsDarkMode(true);
     } else {
       document.documentElement.classList.remove("dark");
-
       setIsDarkMode(false);
     }
   }, [isDarkMode]);
@@ -62,7 +60,7 @@ const NavbarBtn = ({ name, id, icon }: SectionProp) => {
   );
 };
 
-const SunBtn = ({ setIsDarkMode }) => {
+const SunBtn = ({ setIsDarkMode }: any) => {
   function handleLightMode() {
     setIsDarkMode(false);
     localStorage.theme = "light";
@@ -76,7 +74,7 @@ const SunBtn = ({ setIsDarkMode }) => {
   );
 };
 
-const MoonBtn = ({ setIsDarkMode }) => {
+const MoonBtn = ({ setIsDarkMode }: any) => {
   function handleDarkMode() {
     setIsDarkMode(true);
     localStorage.theme = "dark";
