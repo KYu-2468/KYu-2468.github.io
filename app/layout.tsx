@@ -8,8 +8,6 @@ export default function RootLayout({ children }: any) {
         <meta name="theme-color" content="#000000" />
         <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
 
-        <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-
         <title>Kevin Yu Portfolio</title>
       </head>
       <body>{children}</body>

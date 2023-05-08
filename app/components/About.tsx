@@ -3,7 +3,7 @@ import Content from "./Typography/Content";
 import SectionTitle from "./Typography/SectionTitle";
 import Title from "./Typography/Title";
 
-const profileImg = "./img/profile-img.png";
+const profileImg = "./img/profile-img.webp";
 const About = () => {
   return (
     <>
