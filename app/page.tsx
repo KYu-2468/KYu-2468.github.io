@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from "react";
+import React from "react";
 import "./globals.css";
 
 import SectionLayout from "./components/SectionLayout";
@@ -6,10 +6,10 @@ import SectionLayout from "./components/SectionLayout";
 import Navbar, { SectionProp } from "./components/Navbar";
 import Landing from "./components/Landing";
 
-const About = lazy(() => import("./components/About"));
-const Projects = lazy(() => import("./components/Projects"));
-const Skills = lazy(() => import("./components/Skills"));
-const Contact = lazy(() => import("./components/Contact"));
+import About from "./components/About";
+import Projects from "./components/Projects";
+import Skills from "./components/Skills";
+import Contact from "./components/Contact";
 
 const sections: SectionProp[] = [
   { name: "About", id: "about", icon: "T", element: <About /> },
@@ -29,9 +29,9 @@ function App() {
 
         {sections.map(({ id, element }: SectionProp) => {
           return (
-            <Suspense key={id} fallback={<></>}>
-              <SectionLayout id={id}>{element}</SectionLayout>
-            </Suspense>
+            <SectionLayout key={id} id={id}>
+              {element}
+            </SectionLayout>
           );
         })}
       </div>
