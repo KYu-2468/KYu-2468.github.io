@@ -22,7 +22,7 @@ function App() {
   return (
     <>
       <Navbar sections={sections} />
-      <div className="App scroll-smooth">
+      <div className="text-black bg-white dark:text-white dark:bg-black App scroll-smooth">
         <SectionLayout id="landing">
           <Landing />
         </SectionLayout>

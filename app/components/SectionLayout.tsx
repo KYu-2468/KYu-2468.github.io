@@ -7,7 +7,7 @@ interface Props {
 
 const SectionLayout = ({ children, id }: Props) => {
   return (
-    <div id={id} className="w-full scroll-mt-16 mb-4 md:mb-12">
+    <div id={id} className="w-full pb-4 scroll-mt-16 md:pb-12">
       {children}
     </div>
   );
