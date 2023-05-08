@@ -6,7 +6,7 @@ import ContactButton from "./Button/ContactButton";
 import "./Landing.css";
 import { TypeAnimation } from "react-type-animation";
 import Calendly from "./Calendly";
-const profileImg = "./img/profile-img.webp";
+const profileImg = "./img/profile-img-square.webp";
 
 const Landing = () => {
   const [is3DModelActivated, setIs3DModelActivated] = useState(false);
@@ -17,8 +17,8 @@ const Landing = () => {
 
   return (
     <>
-      <div className="flex h-full pt-24">
-        <div className="flex items-center justify-center w-1/2">
+      <div className="flex flex-col items-center h-full pt-24 md:flex-row">
+        <div className="flex items-center justify-center flex-grow w-1/2 h-full">
           {is3DModelActivated ? <KevinAvatar /> : <Image />}
         </div>
         <div className="flex flex-col items-center w-1/2 h-full px-2 pt-12 text-2xl">
@@ -74,9 +74,9 @@ const Landing = () => {
 
 const Image = () => {
   return (
-    <div className="flex items-center justify-center w-full md:ml-8">
+    <div className="flex items-center justify-center h-40 md:h-60 xl:h-3/4 md:ml-8">
       <img
-        className="w-4/5 shadow-lg md:w-full shadow-black rounded-xl xl:w-4/5"
+        className="h-40 rounded-full shadow-lg shadow-black xl:h-96 md:h-72"
         src={profileImg}
         alt="profile"
       />
