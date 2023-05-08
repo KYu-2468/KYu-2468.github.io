@@ -40,7 +40,7 @@ const Landing = () => {
             />
           </div>
 
-          <div className="flex flex-col items-center w-1/2 mt-12 space-y-6 md:justify-evenly">
+          <div className="flex flex-col items-center w-1/2 mt-12 md:justify-evenly">
             <button
               onClick={handle3DModelActivation}
               className="font-bold text-white bg-green-500 btn-primary"

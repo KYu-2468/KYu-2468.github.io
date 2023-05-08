@@ -13,7 +13,8 @@ const Contact = () => {
         forward to meeting you soon!
       </div>
 
-      <div className="flex flex-col items-center mb-6 space-y-6 md:space-y-0 md:flex-row md:flex-wrap md:justify-evenly">
+      <div className="flex flex-wrap m-4 mb-6 flex-start justify-evenly ">
+        <Calendly />
         <ContactButton
           text="Linkedin"
           textColor="text-white"
@@ -35,8 +36,6 @@ const Contact = () => {
           linkURL="https://leetcode.com/KYu-2468/"
         />
       </div>
-
-      <Calendly />
     </>
   );
 };
