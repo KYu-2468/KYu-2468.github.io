@@ -20,7 +20,7 @@ export default function Calendly() {
         async
       ></script>
       <a href="#contact" onClick={onClickCalendly}>
-        <button className={`btn-primary bg-green-500 text-white`}>
+        <button className={`btn-primary bg-green-600 text-white`}>
           <p className="font-bold no-underline">Coffee Chat</p>
         </button>
       </a>

@@ -3,11 +3,15 @@
 import React from "react";
 import { Avatar } from "@readyplayerme/visage";
 import { ColorRing } from "react-loader-spinner";
+import { useMediaQuery } from "usehooks-ts";
 
 const modelSrc = "kevin-avatar.glb"; // this can be a relative or absolute URL
 const animationSrc = "/male-idle.glb";
 
 export default function KevinAvatar() {
+  const isSmallScreen = useMediaQuery("(max-width: 768px)");
+  const isMediumScreen = useMediaQuery("(max-width: 1280px)");
+
   return (
     <Avatar
       ambientLightColor="#fff5b6"
@@ -50,17 +54,20 @@ export default function KevinAvatar() {
       ]}
       style={{
         background: "transparent",
+        height: isSmallScreen ? "160px" : "516px",
       }}
       loader={
-        <ColorRing
-          visible={true}
-          height="80"
-          width="80"
-          ariaLabel="blocks-loading"
-          wrapperStyle={{}}
-          wrapperClass="blocks-wrapper"
-          colors={["red", "white", "blue", "green", "yellow"]}
-        />
+        <div className="flex items-center justify-center h-full">
+          <ColorRing
+            visible={true}
+            height={isSmallScreen ? "160px" : "516px"}
+            width={isSmallScreen ? "160px" : "516px"}
+            ariaLabel="blocks-loading"
+            wrapperStyle={{}}
+            wrapperClass="blocks-wrapper"
+            colors={["red", "white", "blue", "green", "yellow"]}
+          />
+        </div>
       }
     />
   );

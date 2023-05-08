@@ -3,7 +3,7 @@ import Content from "./Typography/Content";
 import SectionTitle from "./Typography/SectionTitle";
 import Title from "./Typography/Title";
 
-const profileImg = "./img/profile-img.webp";
+const profileImg = "./img/profile-img-square.webp";
 const About = () => {
   return (
     <>
@@ -20,7 +20,7 @@ const Image = () => {
   return (
     <div className="flex items-center justify-center w-full md:ml-8 md:w-2/5">
       <img
-        className="w-4/5 shadow-lg md:w-full shadow-black rounded-xl xl:w-4/5"
+        className="w-4/5 rounded-full shadow-lg md:w-full shadow-black xl:w-4/5"
         src={profileImg}
         alt="profile"
       />
