@@ -3,7 +3,7 @@
 import React from "react";
 import { Avatar } from "@readyplayerme/visage";
 import { useMediaQuery } from "usehooks-ts";
-import LoadingRing from "./Loading/LoadingRing";
+import LoadingTriangle from "./Loading/LoadingTriangle";
 
 const modelSrc = "kevin-avatar.glb"; // this can be a relative or absolute URL
 const animationSrc = "/male-idle.glb";
@@ -55,7 +55,7 @@ export default function KevinAvatar() {
         background: "transparent",
         height: isSmallScreen ? "160px" : "516px",
       }}
-      loader={<LoadingRing />}
+      loader={<LoadingTriangle />}
     />
   );
 }

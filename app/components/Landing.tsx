@@ -5,7 +5,8 @@ import ContactButton from "./Button/ContactButton";
 import "./Landing.css";
 import { TypeAnimation } from "react-type-animation";
 import Calendly from "./Calendly";
-import LoadingRing from "./Loading/LoadingRing";
+import LoadingTriangle from "./Loading/LoadingTriangle";
+import ButtonWrapper from "./Button/ButtonWrapper";
 const profileImg = "./img/profile-img-square.webp";
 const KevinAvatar = lazy(() => import("./KevinAvatar"));
 
@@ -21,7 +22,7 @@ const Landing = () => {
       <div className="flex flex-col items-center h-full pt-24 md:flex-row">
         <div className="flex items-center justify-center flex-grow w-1/2 h-full">
           {is3DModelActivated ? (
-            <Suspense fallback={<LoadingRing />}>
+            <Suspense fallback={<LoadingTriangle />}>
               <KevinAvatar />
             </Suspense>
           ) : (
@@ -51,11 +52,10 @@ const Landing = () => {
           </div>
 
           <div className="flex flex-col items-center w-1/2 mt-12">
-            <button
-              onClick={handle3DModelActivation}
-              className="font-bold text-white bg-red-600 btn-primary"
-            >
-              {is3DModelActivated ? "Stop" : "Start"} 3D
+            <button onClick={handle3DModelActivation}>
+              <ButtonWrapper>
+                {is3DModelActivated ? "Stop" : "Start"} 3D
+              </ButtonWrapper>
             </button>
             <ContactButton
               text="Linkedin"
@@ -83,7 +83,7 @@ const Image = () => {
   return (
     <div className="flex items-center justify-center h-40 md:h-60 xl:h-3/4 md:ml-8">
       <img
-        className="h-40 rounded-full shadow-lg shadow-black xl:h-96 md:h-72"
+        className="h-40 rounded-full shadow-2xl shadow-black xl:h-96 md:h-72 dark:shadow-white"
         src={profileImg}
         alt="profile"
       />

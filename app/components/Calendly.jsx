@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import ButtonWrapper from "./Button/ButtonWrapper";
 
 export default function Calendly() {
   const onClickCalendly = () => {
@@ -20,9 +21,7 @@ export default function Calendly() {
         async
       ></script>
       <a href="#contact" onClick={onClickCalendly}>
-        <button className={`btn-primary bg-green-600 text-white`}>
-          <p className="font-bold no-underline">Coffee Chat</p>
-        </button>
+        <ButtonWrapper>Coffee Chat</ButtonWrapper>
       </a>
     </>
   );

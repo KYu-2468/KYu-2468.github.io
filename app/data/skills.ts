@@ -9,8 +9,9 @@ const typescript = "./icon/typescript.webp";
 const java = "./icon/java.webp";
 const node = "./icon/node.webp";
 const express = "./icon/express.webp";
+const expressWhite = "./icon/express-white.webp";
 const postgresql = "./icon/postgresql.webp";
-const restfulApi = "./icon/restful-api.webp";
+// const restfulApi = "./icon/restful-api.webp";
 const graphQL = "./icon/graphql.webp";
 
 const git = "./icon/git.webp";
@@ -20,7 +21,7 @@ const vsCode = "./icon/vs-code.webp";
 const postman = "./icon/postman.webp";
 const docker = "./icon/docker.webp";
 
-export interface Skill {
+export interface SkillProp {
   name: string;
   experience: string;
   icon: any;
@@ -32,14 +33,14 @@ const COMPETENT = "Competent";
 const ADVANCED_BEGINNER = "Advanced Beginner";
 // const BEGINNER = "Beginner";
 
-export const language: Skill[] = [
+export const language: SkillProp[] = [
   { name: "JavaScript", experience: PROFICIENT, icon: javascript },
   { name: "TypeScript", experience: COMPETENT, icon: typescript },
   // { name: "Python", experience: COMPETENT, icon: python },
   { name: "Java", experience: COMPETENT, icon: java },
 ];
 
-export const frontEnd: Skill[] = [
+export const frontEnd: SkillProp[] = [
   { name: "React", experience: PROFICIENT, icon: react },
   { name: "Redux", experience: PROFICIENT, icon: redux },
   { name: "HTML5", experience: PROFICIENT, icon: html },
@@ -48,16 +49,17 @@ export const frontEnd: Skill[] = [
   { name: "Material UI", experience: ADVANCED_BEGINNER, icon: materialUI },
 ];
 
-export const backEnd: Skill[] = [
+export const backEnd: SkillProp[] = [
   { name: "Node", experience: PROFICIENT, icon: node },
-  { name: "Express", experience: PROFICIENT, icon: express },
+  // { name: "Express", experience: PROFICIENT, icon: express },
+  // { name: "Express", experience: PROFICIENT, icon: expressWhite },
   { name: "PostgreSQL", experience: COMPETENT, icon: postgresql },
   { name: "Firebase", experience: COMPETENT, icon: firebase },
-  { name: "REST API", experience: COMPETENT, icon: restfulApi },
+  // { name: "REST API", experience: COMPETENT, icon: restfulApi },
   { name: "GraphQL", experience: ADVANCED_BEGINNER, icon: graphQL },
 ];
 
-export const additional: Skill[] = [
+export const additional: SkillProp[] = [
   // { name: "Algorithm & Data Structure", experience: EXPERT, icon: algo },
   { name: "VS Code", experience: PROFICIENT, icon: vsCode },
   { name: "Git", experience: COMPETENT, icon: git },

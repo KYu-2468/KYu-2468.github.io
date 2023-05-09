@@ -34,21 +34,10 @@ const Info = () => {
       <Title>Full-Stack Software Engineer</Title>
       <div className="flex flex-wrap">
         <Content>
-          With proficiency in React, Express.js, Node.js, PostgreSQL, and Google
-          Cloud Platform, Kevin is always expanding his skillset and is
-          currently learning Amazon Web Service and Spring-boot.
-        </Content>
-        <Content>
           Before becoming a software engineer, Kevin spent over 5 years as a
           Wireless Test Technician, where he developed the valuable skills of
           problem-solving and self-taught coding to increase his productivity at
           work.
-        </Content>
-        <Content>
-          In his free time, Kevin loves to dive into novels, watch movies, and
-          play games. Swimming is one of his favorite sports because the cold
-          water helps him explore and focus on different things, such as life,
-          the universe, and coding.
         </Content>
         <Content>
           Collaboration, positivity, and a non-toxic environment are values that

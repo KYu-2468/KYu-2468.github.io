@@ -1,4 +1,5 @@
 import React from "react";
+import ButtonWrapper from "./ButtonWrapper";
 
 interface ButtonProp {
   buttonColor: string;
@@ -14,10 +15,8 @@ export default function ProjectButtonn({
   linkURL,
 }: ButtonProp) {
   return (
-    <a href={linkURL} className="no-underline">
-      <button className={`btn-primary ${buttonColor} ${textColor} w-40 h-12`}>
-        <p className="font-bold no-underline">{text}</p>
-      </button>
+    <a href={linkURL}>
+      <ButtonWrapper>{text}</ButtonWrapper>
     </a>
   );
 }
