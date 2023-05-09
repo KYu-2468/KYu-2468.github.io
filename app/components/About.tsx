@@ -20,7 +20,7 @@ const Image = () => {
   return (
     <div className="flex items-center justify-center w-full md:ml-8 md:w-2/5">
       <img
-        className="w-4/5 rounded-full shadow-lg md:w-full shadow-black xl:w-4/5"
+        className="w-4/5 rounded-full shadow-2xl dark:shadow-white md:w-full shadow-black xl:w-4/5"
         src={profileImg}
         alt="profile"
       />
@@ -34,18 +34,15 @@ const Info = () => {
       <Title>Full-Stack Software Engineer</Title>
       <div className="flex flex-wrap">
         <Content>
-          Before becoming a software engineer, Kevin spent over 5 years as a
-          Wireless Test Technician, where he developed the valuable skills of
-          problem-solving and self-taught coding to increase his productivity at
-          work.
-        </Content>
-        <Content>
-          Collaboration, positivity, and a non-toxic environment are values that
-          Kevin holds dear. Kevin is currently seeking new opportunities to
-          develop his skills as a software engineer. He enjoys the challenge of
-          problem-solving and is particularly interested in debugging and
-          researching solutions. Kevin is passionate about industries that have
-          a positive impact on people's well-being.
+          Meet Kevin, a software engineer with 5+ years in RF test engineering
+          who self-taught programming to improve work productivity. He graduated
+          from Fullstack Academy, a Forbes' top 10 software engineering
+          bootcamp, and currently ranks top 8.4% among 393,066 global
+          contestants in LeetCode's Global Competitive programming competition.
+          Kevin values collaboration, positivity, and a non-toxic work
+          environment, and enjoys researching solutions and debugging. He's
+          passionate about contributing to industries with a positive impact on
+          people's well-being and could be a great addition to your team.
         </Content>
       </div>
     </div>

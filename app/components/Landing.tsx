@@ -54,7 +54,7 @@ const Landing = () => {
           <div className="flex flex-col items-center w-1/2 mt-12">
             <button onClick={handle3DModelActivation}>
               <ButtonWrapper>
-                {is3DModelActivated ? "Stop" : "Start"} 3D
+                {is3DModelActivated ? "My Photo" : "My 3D Model"}
               </ButtonWrapper>
             </button>
             <ContactButton
