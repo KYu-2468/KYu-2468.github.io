@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <>
       <SectionTitle>Contact</SectionTitle>
-      <div className="pb-12 mx-6 text-base md:mx-16 md:text-xl">
+      <div className="pb-12 mx-6 text-lg md:mx-16 md:text-xl">
         Schedule a 20-minute coffee chat below! I'm always excited to meet new
         people and learn about their experiences and perspectives. I look
         forward to meeting you soon!
