@@ -7,7 +7,7 @@ import { TypeAnimation } from "react-type-animation";
 import Calendly from "./Calendly";
 import LoadingTriangle from "./Loading/LoadingTriangle";
 import ButtonWrapper from "./Button/ButtonWrapper";
-const profileImg = "./img/profile-img-square.webp";
+const profileImg = "./img/profile-img-bu.webp";
 const KevinAvatar = lazy(() => import("./KevinAvatar"));
 
 const Landing = () => {
