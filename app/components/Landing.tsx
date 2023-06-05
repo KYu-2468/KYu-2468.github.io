@@ -57,12 +57,12 @@ const Landing = () => {
                 {is3DModelActivated ? "My Photo" : "My 3D Model"}
               </ButtonWrapper>
             </button>
-            <ContactButton
+            {/* <ContactButton
               text="Linkedin"
               textColor="text-white"
               buttonColor="bg-sky-600"
               linkURL="https://www.linkedin.com/in/kevinyu2468/"
-            />
+            /> */}
 
             <ContactButton
               text="GitHub"

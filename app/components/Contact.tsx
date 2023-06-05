@@ -15,12 +15,12 @@ const Contact = () => {
 
       <div className="flex flex-wrap m-4 mb-6 flex-start justify-evenly ">
         <Calendly />
-        <ContactButton
+        {/* <ContactButton
           text="Linkedin"
           textColor="text-white"
           buttonColor="bg-sky-600"
           linkURL="https://www.linkedin.com/in/kevinyu2468/"
-        />
+        /> */}
 
         <ContactButton
           text="GitHub"
