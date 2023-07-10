@@ -6,7 +6,7 @@
   "dependencies": {
     "@react-three/drei": "^9.66.1",
     "@react-three/fiber": "^8.13.0",
-    "@readyplayerme/visage": "^3.5.2",
+    "@readyplayerme/visage": "^3.10.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
