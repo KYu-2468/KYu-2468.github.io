@@ -1,10 +1,9 @@
 import React from "react";
-import Head from "next/head"
 
 export default function RootLayout({ children }: any) {
   return (
     <html lang="en">
-      <Head>
+      <head>
 
         {/* <!-- Google tag (gtag.js) --> */}
         <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}></script>
@@ -21,7 +20,7 @@ export default function RootLayout({ children }: any) {
         <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
 
         <title>Kevin Yu Portfolio</title>
-      </Head>
+      </head>
       <body>{children}</body>
     </html>
   );
